@@ -1,0 +1,2 @@
+window.chartData = window.chartData || {};
+window.chartData.q1 = [{"screenTech": "LCD", "availability": "Available", "count": 115}, {"screenTech": "LCD (LED)", "availability": "Available", "count": 167}, {"screenTech": "OLED", "availability": "Available", "count": 10}];

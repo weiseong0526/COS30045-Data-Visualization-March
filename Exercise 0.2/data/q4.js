@@ -1,0 +1,2 @@
+window.chartData = window.chartData || {};
+window.chartData.q4 = [{"screenTech": "LCD", "sampleCount": 420, "meanPower": 89.28}, {"screenTech": "LCD (LED)", "sampleCount": 2332, "meanPower": 109.93}, {"screenTech": "Plasma", "sampleCount": 6, "meanPower": 116.17}, {"screenTech": "OLED", "sampleCount": 283, "meanPower": 128.76}];

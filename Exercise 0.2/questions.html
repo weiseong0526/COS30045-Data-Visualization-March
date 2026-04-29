@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Story Questions (Q1-Q6)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/PowerIcon.png" alt="Power Icon" class="logo-icon" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='inline-flex';">
+                <span id="logo-fallback" class="logo-badge" aria-hidden="true">⚡</span>
+                <span>TV Data Visualisation - Australia</span>
+            </a>
+            <div class="header-meta">
+                <span class="header-badge">Data Story Questions</span>
+                <a href="index.html" class="header-about">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page active dashboard">
+            <div class="hero-card question-hero">
+                <h1>Data Story Questions (Q1-Q6)</h1>
+                <p>Each question below includes a six-panel storyboard, chart, and table to help buyers evaluate TV options in the Australian market.</p>
+                <div class="hero-chip-row">
+                    <span class="hero-chip">Storyboard + Chart</span>
+                    <span class="hero-chip">Practical Insights</span>
+                    <span class="hero-chip">Compare Faster</span>
+                </div>
+            </div>
+
+            <section class="question-overview">
+                <article class="overview-card">
+                    <h3>Technology & Availability</h3>
+                    <p>Q1-Q3 focus on what is common in the market, from panel type to size and brand coverage.</p>
+                </article>
+                <article class="overview-card">
+                    <h3>Energy & Efficiency</h3>
+                    <p>Q4-Q6 focus on power usage and star ratings so buyers can compare long-term operating impact.</p>
+                </article>
+                <article class="overview-card">
+                    <h3>Decision Structure</h3>
+                    <p>Every question includes storyboard + chart + table to make insights easy to read and verify.</p>
+                </article>
+            </section>
+
+            <section class="question-list">
+                <article class="question-card">
+                    <button class="question-toggle" data-target="q1Panel">
+                        <span class="q-tag">Q1</span>
+                        <span>What type of TV screen technologies are currently available in Australia and which are the most frequent?</span>
+                    </button>
+                    <div id="q1Panel" class="question-panel">
+                        <p class="context-text">This chart helps first-time buyers see which screen technologies are actually common in the Australian market, so they can avoid spending time on rare categories.</p>
+                        <div class="question-storyboard">
+                            <h4>Q1 Storyboard (6 Panels)</h4>
+                            <div class="storyboard-grid">
+                                <article class="story-note">
+                                    <strong>Issue</strong>
+                                    <p>The Australian market offers a narrow range of TV screen technologies, with very few OLED models.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Demonstrate Issue</strong>
+                                    <p>LCD (LED): 167 models; LCD: 115 models; OLED: 10 models.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Ideas for Overcoming</strong>
+                                    <p>Encourage wider OLED stocking; Introduce more mid-range OLED options; Improve buyer awareness of technology trade-offs.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Pilot Program</strong>
+                                    <p>Goals: Increase OLED model availability; Run promotional campaigns; Add in-store technology guidance.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Before and After Data</strong>
+                                    <p>Before: OLED 10 models, low buyer visibility. After: target +35 OLED models and stronger comparison choices.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Recommendation</strong>
+                                    <p>Expand support for low-availability technologies; Keep mainstream options while improving premium-tech access.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="chart-wrap"><div id="q1Chart" class="d3-chart"></div></div>
+                        <div id="q1Table" class="table-wrap"></div>
+                    </div>
+                </article>
+
+                <article class="question-card">
+                    <button class="question-toggle" data-target="q2Panel">
+                        <span class="q-tag">Q2</span>
+                        <span>What screen sizes are currently available, and which are the most frequent?</span>
+                    </button>
+                    <div id="q2Panel" class="question-panel">
+                        <p class="context-text">This chart shows the size bands most available in stores. It supports practical decisions such as matching room size and budget to common model availability.</p>
+                        <div class="question-storyboard">
+                            <h4>Q2 Storyboard (6 Panels)</h4>
+                            <div class="storyboard-grid">
+                                <article class="story-note">
+                                    <strong>Issue</strong>
+                                    <p>Buyers are unclear which screen-size bands are most available in Australia.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Demonstrate Issue</strong>
+                                    <p>65-inch: 494 models; 55-inch: 466 models; 75-inch: 335 models.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Ideas for Overcoming</strong>
+                                    <p>Guide users to common size bands first; Match room size with top-availability categories; Improve size-based filtering support.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Pilot Program</strong>
+                                    <p>Goals: Start filtering at 55/65/75 inch bands; Reduce search time; Improve shortlist quality.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Before and After Data</strong>
+                                    <p>Before: random size selection and low comparability. After: focus on dominant sizes with highest model counts.</p>
+                                </article>
+                                <article class="story-note">
+                                    <strong>Recommendation</strong>
+                                    <p>Use top size bands as default entry point; Compare energy and brand only within selected size band.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="chart-wrap"><div id="q2Chart" class="d3-chart"></div></div>
+                        <div id="q2Table" class="table-wrap"></div>
+                    </div>
+                </article>
+
+                <article class="question-card">
+                    <button class="question-toggle" data-target="q3Panel">
+                        <span class="q-tag">Q3</span>
+                        <span>Which brands have the greatest number of different models?</span>
+                    </button>
+                    <div id="q3Panel" class="question-panel">
+                        <div class="question-storyboard">
+                            <h4>Q3 Storyboard (6 Panels)</h4>
+                            <div class="storyboard-grid">
+                                <article class="story-note"><strong>Issue</strong><p>Buyers struggle to identify brands with broad model variety.</p></article>
+                                <article class="story-note"><strong>Demonstrate Issue</strong><p>Samsung: 1197 models; Kogan: 769 models; LG: 679 models.</p></article>
+                                <article class="story-note"><strong>Ideas for Overcoming</strong><p>Prioritise top-variety brands; Reduce low-coverage brand noise; Build shortlist using model-count evidence.</p></article>
+                                <article class="story-note"><strong>Pilot Program</strong><p>Goals: Use brand-ranking-first workflow; Improve shortlist speed; Increase relevant choices.</p></article>
+                                <article class="story-note"><strong>Before and After Data</strong><p>Before: equal brand scanning. After: top-ranked brands produce larger and faster shortlists.</p></article>
+                                <article class="story-note"><strong>Recommendation</strong><p>For Q3, shortlist top model-count brands, then filter by technology, size, and efficiency.</p></article>
+                            </div>
+                        </div>
+                        <div class="chart-wrap"><div id="q3Chart" class="d3-chart"></div></div>
+                        <div id="q3Table" class="table-wrap"></div>
+                    </div>
+                </article>
+
+                <article class="question-card">
+                    <button class="question-toggle" data-target="q4Panel">
+                        <span class="q-tag">Q4</span>
+                        <span>Which type of screen technology consumes the least amount of power?</span>
+                    </button>
+                    <div id="q4Panel" class="question-panel">
+                        <div class="question-storyboard">
+                            <h4>Q4 Storyboard (6 Panels)</h4>
+                            <div class="storyboard-grid">
+                                <article class="story-note"><strong>Issue</strong><p>Users cannot easily identify the lowest-power screen technology.</p></article>
+                                <article class="story-note"><strong>Demonstrate Issue</strong><p>LCD: 89.28W; LCD (LED): 109.93W; Plasma: 116.17W; OLED: 128.76W.</p></article>
+                                <article class="story-note"><strong>Ideas for Overcoming</strong><p>Make power metric visible early; Prioritise lower-mean-power technologies; Explain efficiency-cost impact.</p></article>
+                                <article class="story-note"><strong>Pilot Program</strong><p>Goals: Apply power-first technology filter; Compare annual cost impact; Validate final user preference fit.</p></article>
+                                <article class="story-note"><strong>Before and After Data</strong><p>Before: technology selected without power evidence. After: LCD baseline clearly identified as lowest-power option.</p></article>
+                                <article class="story-note"><strong>Recommendation</strong><p>For Q4, prefer lower-mean-power technology where it still meets viewing preferences.</p></article>
+                            </div>
+                        </div>
+                        <div class="chart-wrap"><div id="q4Chart" class="d3-chart"></div></div>
+                        <div id="q4Table" class="table-wrap"></div>
+                    </div>
+                </article>
+
+                <article class="question-card">
+                    <button class="question-toggle" data-target="q5Panel">
+                        <span class="q-tag">Q5</span>
+                        <span>What is the relationship between screen size and power use?</span>
+                    </button>
+                    <div id="q5Panel" class="question-panel">
+                        <div class="question-storyboard">
+                            <h4>Q5 Storyboard (6 Panels)</h4>
+                            <div class="storyboard-grid">
+                                <article class="story-note"><strong>Issue</strong><p>The impact of larger screen size on energy use is not obvious to buyers.</p></article>
+                                <article class="story-note"><strong>Demonstrate Issue</strong><p>&lt;60cm: 81.26 kWh/year average; 80cm+: 441.15 kWh/year average.</p></article>
+                                <article class="story-note"><strong>Ideas for Overcoming</strong><p>Show size-energy trend clearly; Flag high-consumption size ranges; Encourage balanced size decisions.</p></article>
+                                <article class="story-note"><strong>Pilot Program</strong><p>Goals: Provide energy estimate by size band; Compare decisions before and after guidance.</p></article>
+                                <article class="story-note"><strong>Before and After Data</strong><p>Before: size selected mainly by preference. After: users see clear energy difference between small and large sizes.</p></article>
+                                <article class="story-note"><strong>Recommendation</strong><p>For Q5, balance preferred size with expected energy impact before final purchase choice.</p></article>
+                            </div>
+                        </div>
+                        <div class="chart-wrap"><div id="q5Chart" class="d3-chart"></div></div>
+                        <div id="q5Table" class="table-wrap"></div>
+                    </div>
+                </article>
+
+                <article class="question-card">
+                    <button class="question-toggle" data-target="q6Panel">
+                        <span class="q-tag">Q6</span>
+                        <span>What is the relationship between star rating and screen size?</span>
+                    </button>
+                    <div id="q6Panel" class="question-panel">
+                        <div class="question-storyboard">
+                            <h4>Q6 Storyboard (6 Panels)</h4>
+                            <div class="storyboard-grid">
+                                <article class="story-note"><strong>Issue</strong><p>Buyers cannot easily judge whether star ratings improve or decline across screen sizes.</p></article>
+                                <article class="story-note"><strong>Demonstrate Issue</strong><p>Average star &lt;60cm: 6.72; Average star 80cm+: 7.27.</p></article>
+                                <article class="story-note"><strong>Ideas for Overcoming</strong><p>Combine size and star in one decision step; Highlight high-star options per size band; Reduce low-efficiency selections.</p></article>
+                                <article class="story-note"><strong>Pilot Program</strong><p>Goals: Add minimum-star filter by size; Measure shortlist quality and efficiency outcomes.</p></article>
+                                <article class="story-note"><strong>Before and After Data</strong><p>Before: star rating ignored in size choice. After: size decisions include star-efficiency evidence.</p></article>
+                                <article class="story-note"><strong>Recommendation</strong><p>For Q6, select higher-star models within the chosen size range to improve efficiency.</p></article>
+                            </div>
+                        </div>
+                        <div class="chart-wrap"><div id="q6Chart" class="d3-chart"></div></div>
+                        <div id="q6Table" class="table-wrap"></div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kho Wei Seong. Code and content are made by Kho Wei Seong.</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="data/q1.js"></script>
+    <script src="data/q2.js"></script>
+    <script src="data/q3.js"></script>
+    <script src="data/q4.js"></script>
+    <script src="data/q5.js"></script>
+    <script src="data/q6.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
