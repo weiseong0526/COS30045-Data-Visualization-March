@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cos30045-data-visualization-march",
+  "compatibility_date": "2026-04-30",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "Exercise 0.2"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
